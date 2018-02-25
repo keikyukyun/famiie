@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.MainActivity">
+
+    <data>
+
+    </data>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</layout>

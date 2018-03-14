@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Group Id needs for showing divider -->
+    <group
+        android:id="@+id/menu_group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_home"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="ホーム" />
+        <item
+            android:id="@+id/nav_item_info"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="インフォメーション" />
+        <item
+            android:id="@+id/nav_item_map"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="地図" />
+
+    </group>
+    <group
+        android:id="@+id/menu_group_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_sponsor"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="グループ２の１" />
+        <item
+            android:id="@+id/nav_item_contributor"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="グループ２−２" />
+    </group>
+    <group
+        android:id="@+id/menu_group_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_setting"
+            android:icon="@android:drawable/ic_menu_more"
+            android:title="グループ３−１" />
+    </group>
+    <group
+        android:id="@+id/menu_group_4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_all_feedback"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="グループ４−１" />
+    </group>
+
+
+</menu>

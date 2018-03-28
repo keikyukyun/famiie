@@ -4,12 +4,11 @@ import android.app.Application
 import android.content.Context
 import dagger.Module
 import dagger.Provides
-import javax.inject.Singleton
 
 @Module
-internal object AppModule {
-    @Singleton
+class AppModule(private val application: Application) {
     @Provides
-    @JvmStatic
-    fun provideContext(application: Application): Context = application
+    fun provideContext(): Context {
+        return application.applicationContext
+    }
 }

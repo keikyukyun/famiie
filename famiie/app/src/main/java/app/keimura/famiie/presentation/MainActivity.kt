@@ -12,7 +12,6 @@ import android.view.MenuItem
 import app.keimura.famiie.R
 import app.keimura.famiie.data.db.AppDatabase
 import app.keimura.famiie.di.AppComponent
-import app.keimura.famiie.di.AppModule
 import app.keimura.famiie.di.DaggerAppComponent
 import app.keimura.famiie.di.DatabaseModule
 import kotlinx.android.synthetic.main.activity_main_nav.*
@@ -53,7 +52,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun initComponent() {
         appComponent = DaggerAppComponent.builder()
                 .databaseModule(DatabaseModule(this.application))
-                .appModule(AppModule(this.application))
+                // TODO:ビルド通すため一旦コメントアウト
+//                .appModule(AppModule(this.application))
                 .build()
         appComponent.inject(this)
     }

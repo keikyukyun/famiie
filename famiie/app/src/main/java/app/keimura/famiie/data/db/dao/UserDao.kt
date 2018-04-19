@@ -5,7 +5,6 @@ import android.arch.persistence.room.Delete
 import android.arch.persistence.room.Insert
 import android.arch.persistence.room.Query
 import app.keimura.famiie.data.db.entity.UserEntity
-import io.reactivex.Completable
 import io.reactivex.Flowable
 
 /**
@@ -17,13 +16,13 @@ abstract class UserDao {
      * データを挿入する。
      */
     @Insert
-    abstract fun insertUserData(): Completable
+    abstract fun insertUserData(entity: UserEntity)
 
     /**
      * データを削除する。
      */
     @Delete
-    abstract fun deleteUserData(): Completable
+    abstract fun deleteUserData(entity: UserEntity)
 
     /**
      * データを一件取得する。
